@@ -5,29 +5,25 @@
     <title>CSS BASICS</title>
 </head>
 <body>
-    <div id="content">
-
-        <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel quis necessitatibus quaerat asperiores beatae vero iste veritatis eius ipsum dolores nesciunt facere, nisi nam totam neque odio minus cupiditate. Debitis!
-        </p>
-        <p class="error">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo optio reprehenderit, excepturi, nesciunt ullam assumenda ipsa totam dolores, enim consequatur cupiditate quod voluptatem? Ducimus ipsa rem, delectus in aliquam sint.
-        </p>
-        <p class="success feedback">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, doloribus veritatis amet quod accusamus rem repellendus distinctio, excepturi cumque nostrum dolorum nisi. Accusantium quam, inventore doloremque animi laborum blanditiis amet!
-        </p>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nesciunt iusto aut. Maxime, aut nemo. Blanditiis accusantium ea illo et. Ipsa illum cum aliquam laborum delectus doloremque quod dolorem libero.
-        </p>
-
-    </div>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos earum tempora sequi facilis porro error blanditiis molestias a expedita, explicabo, cupiditate veniam ullam optio animi eaque asperiores, delectus dolores aspernatur.</p>
-
-    <div class="error">i am span tag</div>
-
-    <a href="https://www.thenetninja.co.uk">the best site on th web</a>
-    <a href="https://www.google.com">google website</a>
-    <a href="https://www.thenetninja.co.uk">the best site on th web</a>
+    <form action="">
+        <input type="email" name="email" id="email">
+        <input type="password" name="password" id="password">
+        <div id="toggle_password">See password</div>
+    </form>
 </body>
+<script>
+    const password_field = document.getElementById("password");
+    const toggle_password = document.getElementById("toggle_password");
+
+    toggle_password.addEventListener('click', ()=>{
+        if(password_field.getAttribute("type") === "password"){
+            password_field.setAttribute("type", "text");
+            alert(filed_type)
+        }else{
+            password_field.setAttribute("type", "password");
+        }
+        
+    })
+</script>
 
 </hmtl>
